@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+div {
+    max-width: 452px;
+    margin-right: auto;
+    margin-left: auto;
+    background: #000;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    animation-name: hello;
+    transition: all;
+    animation-duration: 2s;
+    white-space: nowrap;
+    animation-iteration-count: 100;
+}
+
+@keyframes hello {
+    0% {
+        right: -120px;
+    }
+    /* 50% {
+        right: 150px;
+    } */
+    100%{
+        right: 500px;
+    }
+}
